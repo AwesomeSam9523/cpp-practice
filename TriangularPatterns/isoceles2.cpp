@@ -28,7 +28,8 @@ int main() {
         cout << i + numbers + 1;
         numbers = 0;
         while (numbers < i) {
-            cout << i - numbers;
+            // cout << endl << "number is " << numbers << endl;
+            cout << i + i - numbers;
             numbers++;
         }
         i++;
