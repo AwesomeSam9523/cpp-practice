@@ -13,8 +13,7 @@ int main() {
     int n;
     cin >> n;
 
-    int i = 0;
-    while (i < n) {
+    for (int i = 0; i < n; i++) {
         int starsRequired;
         if (i > n/2) { // middle ke aage chale gaye hai
             starsRequired = (2*(n - i - 1)) + 1;
@@ -24,17 +23,12 @@ int main() {
         
         int spaceRequired = (n - starsRequired)/2;
 
-        int j = 0;
-        while (j < spaceRequired) {
+        for (int j = 0; j < spaceRequired; j++) {
             cout << " ";
-            j++;
         }
-        int k = 0;
-        while (k < starsRequired) {
+        for (int k = 0; k < starsRequired; k++) {
             cout << "*";
-            k++;
         }
         cout << endl;
-        i++;
     }
 }
