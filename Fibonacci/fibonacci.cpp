@@ -6,7 +6,6 @@ int main() {
     int n;
 
     cin >> n;
-    int i = 2;
     for (int i = 2; i < n; i++) {
         number2 = number1 + number2;
         number1 = number2 - number1;
