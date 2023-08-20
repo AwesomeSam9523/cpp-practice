@@ -3,9 +3,9 @@
 ### These are some programs I make while I learn C++.
 `Last Updated: 20 Aug'23`
 
-- Total files: `47`
-- Total lines: `1,135`
-- Total characters: `13,473`
+- Total files: `50`
+- Total lines: `1,187`
+- Total characters: `14,068`
 
 ### List of all programs:
   - [Hello World](1_hello_world/helloWorld.cpp)
@@ -60,3 +60,7 @@
   - Functions
     - [Is Fibonacci](29_functions/1_is_fibonacci/fibonacci.cpp)
     - [Permutation Combination](29_functions/2_permutation_combination/pnc.cpp)
+  - Arrays
+    - [Filling Array](30_arrays/1_filling_array/filling_array.cpp)
+    - [Minimum Element](30_arrays/2_minimum_element/min_ele.cpp)
+    - [Sum Of Elements](30_arrays/3_sum_of_elements/sum.cpp)
