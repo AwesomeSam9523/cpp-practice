@@ -51,7 +51,7 @@ def get_name_and_path(folder: t.Optional[str] = None, level: int = 0) -> None:
             markup += f"{level * '  '}- [{filename}]({filepath})\n"
     
         if os.path.isdir(filepath):
-            print(folder)
+            # print(folder)
             if folder not in done_levels and level != 0:
                 markup += f"{level * '  '}- {filename}\n"
                 done_levels.append(folder)

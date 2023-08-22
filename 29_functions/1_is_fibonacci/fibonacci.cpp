@@ -25,7 +25,7 @@ bool isFibonacci(int n) {
     }
     return false;
 }
-
+ 
 int main() {
     int n;
     cin >> n;
