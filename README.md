@@ -1,11 +1,11 @@
 # 🍵 Some basic C++ programs
 
 ### These are some programs I make while I learn C++.
-`Last Updated: 22 Aug'23`
+`Last Updated: 25 Aug'23`
 
-- Total files: `54`
-- Total lines: `1,338`
-- Total characters: `16,367`
+- Total files: `59`
+- Total lines: `1,676`
+- Total characters: `21,875`
 
 ### List of all programs:
   - [Hello World](1_hello_world/helloWorld.cpp)
@@ -68,3 +68,9 @@
     - [Arrange Elements](30_arrays/5_arrange_elements/arrange.cpp)
     - [Maximum Candies](30_arrays/6_maximum_candies/candies.cpp)
     - [Find Unique Element](30_arrays/7_find_unique_element/unique.cpp)
+  - Sorting Algorithms
+    - [Selection Sort](31_sorting_algorithms/1_selection_sort/selection_sort.cpp)
+    - [Bubble Sort](31_sorting_algorithms/2_bubble_sort/bubble_sort.cpp)
+    - [Insertion Sort](31_sorting_algorithms/3_insertion_sort/insertion_sort.cpp)
+  - [Kth Smallest](32_kth_smallest/kth_smallest.cpp)
+  - [Merge Sorted Arrays](33_merge_sorted_arrays/merge.cpp)
