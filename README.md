@@ -1,11 +1,11 @@
 # 🍵 Some basic C++ programs
 
 ### These are some programs I make while I learn C++.
-`Last Updated: 28 Aug'23`
+`Last Updated: 29 Aug'23`
 
-- Total files: `60`
-- Total lines: `1,741`
-- Total characters: `23,035`
+- Total files: `72`
+- Total lines: `2,173`
+- Total characters: `29,913`
 
 ### List of all programs:
   - [Hello World](1_hello_world/helloWorld.cpp)
@@ -75,3 +75,17 @@
   - [Kth Smallest](32_kth_smallest/kth_smallest.cpp)
   - [Merge Sorted Arrays](33_merge_sorted_arrays/merge.cpp)
   - [Sort 012](34_sort_012/sort_012.cpp)
+  - Character Arrays
+    - [Length Of String](35_character_arrays/1_length_of_string/length.cpp)
+    - [Check Palindrome](2_check_palindrome/palindrome.cpp)
+    - [Trim Spaces](3_trim_spaces/trim.cpp)
+    - [All Substrings](4_all_substrings/substrings.cpp)
+  - 2d Arrays
+    - [Column Wise Sum](1_column_wise_sum/colsum.cpp)
+    - [Printing 2d Array](2_printing_2d_array/print.cpp)
+    - [Wave Printing](3_wave_printing/wave.cpp)
+  - [Highest Occuring Char](37_highest_occuring_char/highest.cpp)
+  - [Transpose Of Matrix](38_transpose_of_matrix/transpose.cpp)
+  - [Reverse Each Word](39_reverse_each_word/reverse.cpp)
+  - [Boundary Sum](40_boundary_sum/sum.cpp)
+  - [String Permutation](41_string_permutation/permutation.cpp)
