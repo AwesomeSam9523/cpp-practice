@@ -1,11 +1,11 @@
 # 🍵 Some basic C++ programs
 
 ### These are some programs I make while I learn C++.
-`Last Updated: 29 Aug'23`
+`Last Updated: 31 Aug'23`
 
-- Total files: `72`
-- Total lines: `2,173`
-- Total characters: `29,913`
+- Total files: `75`
+- Total lines: `2,242`
+- Total characters: `30,783`
 
 ### List of all programs:
   - [Hello World](1_hello_world/helloWorld.cpp)
@@ -89,3 +89,7 @@
   - [Reverse Each Word](39_reverse_each_word/reverse.cpp)
   - [Boundary Sum](40_boundary_sum/sum.cpp)
   - [String Permutation](41_string_permutation/permutation.cpp)
+  - Strings
+    - [Taking Input](1_taking_input/input.cpp)
+    - [Check Palindrome](42_strings/2_check_palindrome/palindrome.cpp)
+    - [Count Words](42_strings/3_count_words/words.cpp)
