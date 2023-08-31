@@ -35,4 +35,4 @@ int totalSum(int input[][501], int n)
         }
     }
     return sum;
-}// 1, 2
+}
