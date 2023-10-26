@@ -1,25 +1,26 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int a = 100, b = 200;
-    int *p = &a, *q = &b;
+void swap(int *a, int *b)
+{
+    cout << "inside swap" << endl;
+    cout << a << " " << b << endl;
+	int temp = *a;
+    cout << "temp: " << temp << endl;
+    *a = *b;
+    *b = temp;
+}
 
-    cout << a << endl;
-    cout << b << endl;
-    cout << p << endl;
-    cout << q << endl;
-    cout << *p << endl;
-    cout << *q << endl;
-
-    p = q;
-
-    cout << a << endl;
-    cout << b << endl;
-    cout << p << endl;
-    cout << q << endl;
-    cout << *p << endl;
-    cout << *q << endl;
-
-    return 0;
+int main()
+{
+    int t;
+    cin>>t;
+    for(int i=0;i<t;i++)
+    {
+        int a,b;
+        cin>>a>>b;
+        swap(&a , &b);
+        cout<<a<<" "<<b;
+        cout<<endl;
+    }
 }
