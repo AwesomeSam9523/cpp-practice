@@ -1,76 +1,52 @@
-#include <cstdlib>
-#include <string>
-#include <fstream>
-#include <iostream>
-#include <vector>
-#include <climits>
-#include <math.h>
-using namespace std;
+int checkNumber(string str, bool initial) {
+	// initial = first is 0
+	int counter = 0;
+	int times = 0;
+	for (int i = 0; i < str.size(); i++) {
+		char ch = str[i];
+		if (initial) {
+			if (counter % 2 == 0) {
+				// should be 0
+				if (ch != '0') {
+					// cout << "t ch not 0" << endl;
+					times++;
+				}
+			} else {
+				// should be 1
+				if (ch != '1') {
+					// cout << "t ch not 1" << endl;
+					times++;
+				}
+			}
+		} else {
+			if (counter % 2 == 0) {
+				// should be 1
+				if (ch != '1') {
+					// cout << "f ch not 1" << endl;
+					times++;
+				}
+			} else {
+				// should be 0
+				if (ch != '0') {
+					// cout << "f ch not 0" << endl;
+					times++;
+				}
+			}
+		}
+		counter++;
+	}
 
-int makeBeautiful(string str) {
-    int count=0;
-	for (int i = 0; i < str.size()-1; )
-    {
-        cout << "i: " << i << endl;
-        cout << "str[i+1] = " << str[i+1] << " str[i] = " << str[i] << " str[i]+pow(-1,str[i]) = " << (str[i]+pow(-1,(int)str[i])) << endl;
-        cout << "if evaluates to: " << (str[i+1]!=(str[i]+pow(-1,str[i]))) << endl;
-        if (str[i+1]!=(str[i]+pow(-1,(int)str[i])))
-        {
-            str[i+1]=(str[i]+pow(-1,str[i]));
-            cout << "changed str[i+1]" << endl;
-            cout << "new str: " << str << endl;
-            i++;
-            count++;
-        } else {
-            i++;
-        }
-        cout << "loop ended. i: " << i << " count: " << count << endl;
-    }
-   return count;
+	return times;
 }
 
-class Runner
-{
-    int t;
-    vector<string> str;
+int makeBeautiful(string str) {
+	int one = checkNumber(str, true);
+	int two = checkNumber(str, false);
 
-public:
-    void takeInput()
-    {
-        cin >> t;
-        for (int c = 0; c < t; c++)
-        {
-            string temp;
-            cin >> temp;
-            str.push_back(temp);
-        }
-    }
-
-    void execute()
-    {
-        vector<string> strCopy = str;
-        for (int i = 0; i < t; i++)
-        {
-            int ans = makeBeautiful(strCopy[i]);
-        }
-    }
-
-    void executeAndPrintOutput()
-    {
-        for (int i = 0; i < t; i++)
-        {
-            int ans = makeBeautiful(str[i]);
-            cout << ans << "\n";
-        }
-    }
-};
-
-int main()
-{
-   
-    Runner runner;
-    runner.takeInput();
-    runner.executeAndPrintOutput();
-
-    return 0;
+	// cout << one << " " << two << endl;
+	if (one >= two) {
+		return two;
+	} else {
+		return one;
+	}
 }

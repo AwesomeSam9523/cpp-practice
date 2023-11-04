@@ -1,11 +1,11 @@
 # 🍵 Some basic C++ programs
 
 ### These are some programs I make while I learn C++.
-`Last Updated: 31 Aug'23`
+`Last Updated: 04 Nov'23`
 
-- Total files: `75`
-- Total lines: `2,242`
-- Total characters: `30,783`
+- Total files: `83`
+- Total lines: `2,505`
+- Total characters: `34,877`
 
 ### List of all programs:
   - [Hello World](1_hello_world/helloWorld.cpp)
@@ -93,3 +93,14 @@
     - [Taking Input](1_taking_input/input.cpp)
     - [Check Palindrome](42_strings/2_check_palindrome/palindrome.cpp)
     - [Count Words](42_strings/3_count_words/words.cpp)
+    - [All Substrings](42_strings/4_all_substrings/substr.cpp)
+  - Pointers
+    - [Declaring Pointer](43_pointers/1_declaring_pointer/pointer.cpp)
+  - [Reference Variable](44_reference_variable/ref.cpp)
+  - [Dynamic Allocation](45_dynamic_allocation/dynamic.cpp)
+  - Standard Template Library
+    - [Arrays](1_arrays/arrays.cpp)
+    - [Vectors](2_vectors/vector.cpp)
+  - [Finding Duplicate](47_finding_duplicate/duplicate.cpp)
+  - Sorting Algorithms
+    - [Merge Sort](1_merge_sort/merge_sort.cpp)
