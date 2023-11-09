@@ -1,11 +1,11 @@
 # 🍵 Some basic C++ programs
 
 ### These are some programs I make while I learn C++.
-`Last Updated: 04 Nov'23`
+`Last Updated: 09 Nov'23`
 
-- Total files: `83`
-- Total lines: `2,505`
-- Total characters: `34,877`
+- Total files: `84`
+- Total lines: `2,541`
+- Total characters: `35,099`
 
 ### List of all programs:
   - [Hello World](1_hello_world/helloWorld.cpp)
@@ -77,20 +77,20 @@
   - [Sort 012](34_sort_012/sort_012.cpp)
   - Character Arrays
     - [Length Of String](35_character_arrays/1_length_of_string/length.cpp)
-    - [Check Palindrome](2_check_palindrome/palindrome.cpp)
-    - [Trim Spaces](3_trim_spaces/trim.cpp)
-    - [All Substrings](4_all_substrings/substrings.cpp)
+    - [Check Palindrome](35_character_arrays/2_check_palindrome/palindrome.cpp)
+    - [Trim Spaces](35_character_arrays/3_trim_spaces/trim.cpp)
+    - [All Substrings](35_character_arrays/4_all_substrings/substrings.cpp)
   - 2d Arrays
-    - [Column Wise Sum](1_column_wise_sum/colsum.cpp)
-    - [Printing 2d Array](2_printing_2d_array/print.cpp)
-    - [Wave Printing](3_wave_printing/wave.cpp)
+    - [Column Wise Sum](36_2d_arrays/1_column_wise_sum/colsum.cpp)
+    - [Printing 2d Array](36_2d_arrays/2_printing_2d_array/print.cpp)
+    - [Wave Printing](36_2d_arrays/3_wave_printing/wave.cpp)
   - [Highest Occuring Char](37_highest_occuring_char/highest.cpp)
   - [Transpose Of Matrix](38_transpose_of_matrix/transpose.cpp)
   - [Reverse Each Word](39_reverse_each_word/reverse.cpp)
   - [Boundary Sum](40_boundary_sum/sum.cpp)
   - [String Permutation](41_string_permutation/permutation.cpp)
   - Strings
-    - [Taking Input](1_taking_input/input.cpp)
+    - [Taking Input](42_strings/1_taking_input/input.cpp)
     - [Check Palindrome](42_strings/2_check_palindrome/palindrome.cpp)
     - [Count Words](42_strings/3_count_words/words.cpp)
     - [All Substrings](42_strings/4_all_substrings/substr.cpp)
@@ -99,8 +99,9 @@
   - [Reference Variable](44_reference_variable/ref.cpp)
   - [Dynamic Allocation](45_dynamic_allocation/dynamic.cpp)
   - Standard Template Library
-    - [Arrays](1_arrays/arrays.cpp)
-    - [Vectors](2_vectors/vector.cpp)
+    - [Arrays](46_standard_template_library/1_arrays/arrays.cpp)
+    - [Vectors](46_standard_template_library/2_vectors/vector.cpp)
   - [Finding Duplicate](47_finding_duplicate/duplicate.cpp)
   - Sorting Algorithms
-    - [Merge Sort](1_merge_sort/merge_sort.cpp)
+    - [Merge Sort](48_sorting_algorithms/1_merge_sort/merge_sort.cpp)
+    - [Quick Sort](48_sorting_algorithms/2_quick_sort/quick_sort.cpp)

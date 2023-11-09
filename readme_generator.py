@@ -25,6 +25,7 @@ def get_sorted_files(folder: t.Optional[str]):
     """This sorts the inner files in ascending order"""
     files = os.listdir(folder)
     files = [x for x in files if x not in [".git", "README.md", "readme_generator.py", ".gitignore", ".vscode"]]
+    files = [x for x in files if not x.endswith(".exe")]
     if folder is not None and all(x.split("_")[0].isdigit() for x in files):
         files = sorted(files, key=lambda x: int(x.split("_")[0]))
     elif folder is None:

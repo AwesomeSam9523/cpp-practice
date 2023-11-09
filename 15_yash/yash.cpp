@@ -1,52 +1,38 @@
-int checkNumber(string str, bool initial) {
-	// initial = first is 0
-	int counter = 0;
-	int times = 0;
-	for (int i = 0; i < str.size(); i++) {
-		char ch = str[i];
-		if (initial) {
-			if (counter % 2 == 0) {
-				// should be 0
-				if (ch != '0') {
-					// cout << "t ch not 0" << endl;
-					times++;
-				}
-			} else {
-				// should be 1
-				if (ch != '1') {
-					// cout << "t ch not 1" << endl;
-					times++;
-				}
-			}
-		} else {
-			if (counter % 2 == 0) {
-				// should be 1
-				if (ch != '1') {
-					// cout << "f ch not 1" << endl;
-					times++;
-				}
-			} else {
-				// should be 0
-				if (ch != '0') {
-					// cout << "f ch not 0" << endl;
-					times++;
-				}
-			}
+/*
+3
+
+*
+*1*
+*121*
+*12321*
+*121*
+*1*
+*
+
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+
+	for (int i = 0; i < 2*n + 1; i++) {
+		cout << "*";
+		int i2 = i;
+		if (i > n) {
+			i2 = 2*n - i;
 		}
-		counter++;
+		for (int j = 1; j <= i2; j++) {
+			cout << j;
+		}
+		for (int j = i2 - 1; j >= 1; j--) {
+			cout << j;
+		}
+		if (i2 != 0)
+			cout << "*";
+		cout << endl;
 	}
-
-	return times;
-}
-
-int makeBeautiful(string str) {
-	int one = checkNumber(str, true);
-	int two = checkNumber(str, false);
-
-	// cout << one << " " << two << endl;
-	if (one >= two) {
-		return two;
-	} else {
-		return one;
-	}
+	return 0;
 }
