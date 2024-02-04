@@ -13,9 +13,9 @@ void sort012(int arr[], int n);
 void printArray(int arr[], int n);
 
 int main() {
-    int arr[9] = {0, 2, 1, 0, 1, 2, 0, 2, 2};
-    sort012(arr, 9);
-    printArray(arr, 9);
+    int arr[6] = {0, 1, 2, 0, 1, 2};
+    sort012(arr, 6);
+    printArray(arr, 6);
     return 0;
 }
 
@@ -24,28 +24,35 @@ void shift(int arr[], int start, int end);
 void sort(int arr[], int index);
 
 void sort012(int arr[], int n) {
-    int zeroCount = 0;
-    int oneCount = 0;
-    int twoCount = 0;
-    for (int i = 0; i < n; i++) {
-        int ele = arr[n - 1];
-        int index;
-        if (ele == 0) {
-            zeroCount++;
-            index = 0;
+    int low=0;
+    int mid=0;
+    int high=n-1;
+    for(int i=0;i<n;i++)
+    {
+        printArray(arr,n);
+        cout << low << " " << mid << " " << high << endl;
+        if(arr[mid]==0)
+        {
+            int temp=arr[low];
+            arr[low]=arr[mid];
+            arr[mid]=temp;
+            low++;
+            mid++;
         }
-        else if (ele == 1) {
-            oneCount++;
-            index = zeroCount;
+        else if(arr[mid]==1)
+        {
+            mid++;
         }
-        else if (ele == 2) {
-            twoCount++;
-            index = zeroCount + oneCount;
+        else if(arr[mid]==2)
+        {
+            int temp=arr[high];
+            arr[high]=arr[mid];
+            arr[mid]=temp;
+            high--;
         }
-
-        shift(arr, index, n - 1);
     }
 }
+
 
 
 void shift(int arr[], int newPlace, int current) {

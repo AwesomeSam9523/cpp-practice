@@ -1,11 +1,11 @@
 # 🍵 Some basic C++ programs
 
 ### These are some programs I make while I learn C++.
-`Last Updated: 10 Nov'23`
+`Last Updated: 04 Feb'24`
 
-- Total files: `85`
-- Total lines: `2,573`
-- Total characters: `35,579`
+- Total files: `95`
+- Total lines: `3,324`
+- Total characters: `45,903`
 
 ### List of all programs:
   - [Hello World](1_hello_world/helloWorld.cpp)
@@ -106,3 +106,15 @@
     - [Merge Sort](48_sorting_algorithms/1_merge_sort/merge_sort.cpp)
     - [Quick Sort](48_sorting_algorithms/2_quick_sort/quick_sort.cpp)
   - [Replace Pi](49_replace_pi/replace.cpp)
+  - [Pair Sum With Duplicates](50_pair_sum_with_duplicates/pairsum.cpp)
+  - Icpc
+    - [Bidding](51_icpc/2_bidding/bidding.cpp)
+    - [Football](51_icpc/3_football/football.cpp)
+    - [Uno](51_icpc/4_uno/uno.cpp)
+    - [Virat Century](51_icpc/5_virat_century/virat.cpp)
+  - Linked List
+    - [Delete Node](52_linked_list/1_delete_node/del.cpp)
+    - [Merge Sort](52_linked_list/2_merge_sort/merge_sort_ll.cpp)
+    - [Reverse Recursive](52_linked_list/3_reverse_recursive/reverse_rec.cpp)
+    - [Reverse Iterative](52_linked_list/4_reverse_iterative/reverse_iter.cpp)
+  - [Pascals Triangle](52_pascals_triangle/pascals.cpp)
